@@ -20,7 +20,6 @@
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/fe4f4352-a381-4fd3-b5f6-63840a41a9c0" alt="Login" width="200">
 
 ## Home
-<img src="https://github.com/Jong44/foodcycle/assets/76977984/0c38d3b7-5fbc-46c5-b8da-eac2d52fcab1" alt="Home" width="200">
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/7d883ee4-9481-45f3-85f1-64f2a3311754" alt="Home" width="200">
 
 ## Detail
