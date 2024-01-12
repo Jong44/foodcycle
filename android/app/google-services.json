@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "207259410505",
+    "project_id": "foodcycle-e97e3",
+    "storage_bucket": "foodcycle-e97e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:207259410505:android:d1a3e69ce1f5f961c4df98",
+        "android_client_info": {
+          "package_name": "com.example.latihan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "207259410505-v17dpo21i3t9o68hg5opnvnq0a9dmq2p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZCZldQZv4FxmdmWemvES7B6EYYyOLgx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "207259410505-v17dpo21i3t9o68hg5opnvnq0a9dmq2p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
