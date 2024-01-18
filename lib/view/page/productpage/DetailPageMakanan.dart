@@ -18,8 +18,8 @@ import 'package:iconsax/iconsax.dart';
 class DetailPageMakanan extends StatelessWidget {
   final id;
   DetailPageMakanan({super.key, required this.id});
-  final HomeController homeController = HomeController();
-  final ChartController chartController = ChartController();
+  final HomeController homeController = Get.put(HomeController());
+  final ChartController chartController = Get.put(ChartController());
 
   @override
   Widget build(BuildContext context) {
@@ -337,11 +337,15 @@ class DetailPageMakanan extends StatelessWidget {
                       uid_produk: id,
                       name: homeController.dataProductById['nama'],
                       price: homeController.dataProductById['harga'].toDouble(),
-                      jumlah: 1);
+                      jumlah: 1,
+                      images: homeController.dataProductById['gambar']);
+
                   chartController.addProductToStore(
-                      homeController.dataStoresById['name'],
-                      homeController.dataProductById['nama'],
-                      product);
+                    homeController.dataProductById['id_store'],
+                    homeController.dataStoresById['name'],
+                    homeController.dataStoresById['images'],
+                    product,
+                  );
                 },
                 child: Container(
                   alignment: Alignment.center,

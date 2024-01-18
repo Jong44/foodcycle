@@ -48,6 +48,8 @@ dependencies:
   mailer: ^6.0.1
   crypto: ^3.0.3
   awesome_ripple_animation: ^2.0.0
+  image_picker: ^1.0.7
+  dotted_border: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +77,16 @@ flutter:
   assets:
     - assets/
     - assets/logo_foodcycle.png
+    - assets/antar/timbangan.png
+    - assets/antar/motor.png
+    - assets/pembayaran/bca.png
+    - assets/pembayaran/bri.png
+    - assets/pembayaran/mandiri.png
+    - assets/pembayaran/bni.png
+    - assets/pembayaran/dana.png
+    - assets/pembayaran/jago.png
+    - assets/pembayaran/linkaja.png
+    - assets/pembayaran/gopay.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

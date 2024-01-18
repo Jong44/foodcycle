@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                                     size: 18,
                                   ),
                                 ),
-                                chartController.notif.value > 0
+                                chartController.jumlah.value > 0
                                     ? Positioned(
                                         bottom: 20,
                                         right: 5,
@@ -129,7 +129,7 @@ class _HomePageState extends State<HomePage> {
                                             weight: FontWeight.w500,
                                             color: Colors.white,
                                             size: 9.0,
-                                            text: chartController.notif.value
+                                            text: chartController.jumlah.value
                                                 .toString(),
                                           ),
                                         ))

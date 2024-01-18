@@ -1,6 +1,7 @@
 import 'package:FoodCycle/view/page/auth/LoginPage.dart';
 import 'package:FoodCycle/view/page/blogpage/BlogPage.dart';
 import 'package:FoodCycle/view/page/homepage/HomePage.dart';
+import 'package:FoodCycle/view/page/penyaluranpage/PenyaluranPage.dart';
 import 'package:FoodCycle/view/page/profilepage/ProfilePage.dart';
 import 'package:FoodCycle/view/page/riwayatpage/RiwayatPage.dart';
 import 'package:FoodCycle/view/page/splashscreen/SplashScreen.dart';
@@ -60,6 +61,11 @@ class _IndexPageState extends State<IndexPage> {
         body: page[indexPage],
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: InkWell(
+          onTap: () {
+            setState(() {
+              Get.to(PenyaluranPage());
+            });
+          },
           child: Container(
             width: 60,
             height: 60,

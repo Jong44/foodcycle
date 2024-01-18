@@ -118,10 +118,12 @@ void showDetailKemasan(BuildContext context, String id) {
                               name: homeController.dataProductById['nama'],
                               price: homeController.dataProductById['harga']
                                   .toDouble(),
-                              jumlah: 1);
+                              jumlah: 1,
+                              images: homeController.dataProductById['gambar']);
                           chartController.addProductToStore(
+                              homeController.dataProductById['id_store'],
                               homeController.dataStoresById['name'],
-                              homeController.dataProductById['nama'],
+                              homeController.dataStoresById['images'],
                               product);
                         },
                         child: Container(

@@ -104,7 +104,6 @@ class HomeController extends GetxController {
         print('Dokumen tidak ditemukan');
       }
     } catch (error) {
-      // Handle error
       print('Error: $error');
     }
   }
