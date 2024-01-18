@@ -31,3 +31,14 @@
 
 ## Checkout
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/843a6e22-44b1-47e9-a092-581454ed1873" alt="Keranjang" width="200">
+
+## Blog
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/004024e4-65fb-4f56-a550-65127341e0e1" alt="Blog" width="200">
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/9a2778c2-b27d-4e29-a672-719a0075bf80" alt="Keranjang" width="200">
+
+## Penyaluran
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/3fc564e8-ee4e-4881-b976-8e905fb73d9f" alt="Keranjang" width="200">
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/bccdbcd9-282b-406c-9e4f-027c7206ab97" alt="Keranjang" width="200">
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/48da4994-ac2b-44e4-b820-cb4591d1dabb" alt="Keranjang" width="200">
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/ade9a818-95e3-4888-bd96-f4ddf48893fc" alt="Keranjang" width="200">
+
