@@ -1,4 +1,5 @@
 import 'package:FoodCycle/controllers/BlogController.dart';
+import 'package:FoodCycle/view/page/blogpage/DetailBlogPage.dart';
 import 'package:FoodCycle/view/widgets/text/NormatText.dart';
 import 'package:FoodCycle/view/widgets/text/SubtitleText.dart';
 import 'package:FoodCycle/view/widgets/text/TitleText.dart';
@@ -74,67 +75,75 @@ class BlogPage extends StatelessWidget {
                       itemBuilder: (context, index) {
                         return Column(
                           children: [
-                            Container(
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 14, vertical: 20),
-                              height: 240,
-                              decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(
-                                      width: 1, color: Color(0xffe8e8e8))),
-                              child: Column(children: [
-                                Container(
-                                  width: double.infinity,
-                                  height: 100,
-                                  decoration: BoxDecoration(
-                                      image: DecorationImage(
-                                          fit: BoxFit.cover,
-                                          image: NetworkImage(blogController
-                                              .allDataBlogs[index]['image'])),
-                                      color: Color(0xffe8e8e8),
-                                      borderRadius: BorderRadius.circular(10)),
-                                ),
-                                SizedBox(
-                                  height: 10,
-                                ),
-                                TitleText(
-                                    text: blogController.allDataBlogs[index]
-                                        ['title'],
-                                    size: 14.0),
-                                SizedBox(
-                                  height: 15,
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    SubtitleText(
-                                        text: blogController.allDataBlogs[index]
-                                            ['date'],
-                                        size: 13.0),
-                                    Container(
-                                      alignment: Alignment.center,
-                                      padding:
-                                          EdgeInsets.symmetric(horizontal: 10),
-                                      height: 28,
-                                      decoration: BoxDecoration(
-                                          color: Color(0xffC7F9E2),
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          border: Border.all(
-                                              width: 1,
-                                              color: Color(0xff009688))),
-                                      child: NormalText(
-                                        text: blogController.allDataBlogs[index]
-                                            ['category'],
-                                        size: 12.0,
-                                        weight: FontWeight.w400,
-                                        color: Color(0xff009688),
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ]),
+                            InkWell(
+                              onTap: () {
+                                Get.to(DetailBlogPage(
+                                  id: blogController.allDataBlogs[index]['id'],
+                                ));
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 14, vertical: 20),
+                                height: 240,
+                                decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    border: Border.all(
+                                        width: 1, color: Color(0xffe8e8e8))),
+                                child: Column(children: [
+                                  Container(
+                                    width: double.infinity,
+                                    height: 100,
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            fit: BoxFit.cover,
+                                            image: NetworkImage(blogController
+                                                .allDataBlogs[index]['image'])),
+                                        color: Color(0xffe8e8e8),
+                                        borderRadius:
+                                            BorderRadius.circular(10)),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  TitleText(
+                                      text: blogController.allDataBlogs[index]
+                                          ['title'],
+                                      size: 14.0),
+                                  SizedBox(
+                                    height: 15,
+                                  ),
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      SubtitleText(
+                                          text: blogController
+                                              .allDataBlogs[index]['date'],
+                                          size: 13.0),
+                                      Container(
+                                        alignment: Alignment.center,
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 10),
+                                        height: 28,
+                                        decoration: BoxDecoration(
+                                            color: Color(0xffC7F9E2),
+                                            borderRadius:
+                                                BorderRadius.circular(5),
+                                            border: Border.all(
+                                                width: 1,
+                                                color: Color(0xff009688))),
+                                        child: NormalText(
+                                          text: blogController
+                                              .allDataBlogs[index]['category'],
+                                          size: 12.0,
+                                          weight: FontWeight.w400,
+                                          color: Color(0xff009688),
+                                        ),
+                                      )
+                                    ],
+                                  )
+                                ]),
+                              ),
                             ),
                             SizedBox(
                               height: 20,

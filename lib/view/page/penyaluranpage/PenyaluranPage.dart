@@ -3,6 +3,7 @@ import 'package:FoodCycle/main.dart';
 import 'package:FoodCycle/view/page/penyaluranpage/FormPenyaluranPage.dart';
 import 'package:FoodCycle/view/widgets/custom/Line.dart';
 import 'package:FoodCycle/view/widgets/text/NormatText.dart';
+import 'package:FoodCycle/view/widgets/text/SubtitleText.dart';
 import 'package:FoodCycle/view/widgets/text/TitleText.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -145,7 +146,47 @@ class PenyaluranPage extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-          TitleText(text: "Riwayat", size: 16.0)
+          TitleText(text: "Riwayat", size: 16.0),
+          Container(
+            height: 100,
+            child: ListView.builder(
+              itemCount: 1,
+              itemBuilder: (context, index) {
+                return Container(
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              width: 50,
+                              height: 50,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xffC7F9E2),
+                              ),
+                              child: Image.asset("assets/plants.png"),
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                TitleText(
+                                    text: "Membuang Sampah 3kg", size: 13.0),
+                                SubtitleText(text: "5 Januari 2024", size: 12.0)
+                              ],
+                            )
+                          ],
+                        ),
+                        TitleText(text: "+30 Point", size: 13.0)
+                      ]),
+                );
+              },
+            ),
+          )
         ],
       ),
     );

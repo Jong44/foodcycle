@@ -19,6 +19,7 @@ class BlogController extends GetxController {
   ].obs;
 
   RxList<Map<String, dynamic>> allDataBlogs = <Map<String, dynamic>>[].obs;
+  RxMap<dynamic, dynamic> dataBlogsById = {}.obs as RxMap<dynamic, dynamic>;
 
   Future<void> getBlogs() async {
     try {
@@ -30,6 +31,22 @@ class BlogController extends GetxController {
         data['id'] = doc.id;
         return data;
       }).toList());
+    } catch (error) {
+      print('Error: $error');
+    }
+  }
+
+  Future<void> getBlogsById(String id) async {
+    try {
+      DocumentSnapshot snapshot =
+          await FirebaseFirestore.instance.collection('blogs').doc(id).get();
+
+      if (snapshot.exists) {
+        Map<dynamic, dynamic> data = snapshot.data() as Map<String, dynamic>;
+        dataBlogsById.addAll(Map<dynamic, dynamic>.from(data));
+      } else {
+        print('Dokumen tidak ditemukan');
+      }
     } catch (error) {
       print('Error: $error');
     }
