@@ -32,6 +32,9 @@
 ## Checkout
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/843a6e22-44b1-47e9-a092-581454ed1873" alt="Keranjang" width="200">
 
+## Pembayaran
+<img src="https://github.com/Jong44/foodcycle/assets/76977984/7296bf32-8bcc-49b2-818e-20d6a58347a2" alt="Keranjang" width="200">
+
 ## Blog
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/004024e4-65fb-4f56-a550-65127341e0e1" alt="Blog" width="200">
 <img src="https://github.com/Jong44/foodcycle/assets/76977984/9a2778c2-b27d-4e29-a672-719a0075bf80" alt="Keranjang" width="200">

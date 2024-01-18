@@ -1,6 +1,7 @@
 import 'package:FoodCycle/controllers/CheckoutController.dart';
 import 'package:FoodCycle/models/StoreModel.dart';
 import 'package:FoodCycle/view/page/chartpage/CardCheckout.dart';
+import 'package:FoodCycle/view/page/chartpage/PembayaranPage.dart';
 import 'package:FoodCycle/view/page/chartpage/bottomsheet/pembayaran.dart';
 import 'package:FoodCycle/view/page/chartpage/bottomsheet/voucher.dart';
 import 'package:FoodCycle/view/widgets/buttons/PrimaryButton.dart';
@@ -260,7 +261,14 @@ class CheckoutPage extends StatelessWidget {
                   SizedBox(
                     width: 20,
                   ),
-                  PrimaryButton(title: "Bayar", press: () {}),
+                  PrimaryButton(
+                      title: "Bayar",
+                      press: () {
+                        Get.to(PembayaranPage(
+                            total: checkoutController.subtotal.value +
+                                10000 +
+                                1000));
+                      }),
                 ]),
           ),
         ));
